@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Light grey background */
+    color: #333;
+    line-height: 1.4;
+}
+
+.container {
+    width: 80%;  /* Adjust as needed */
+    margin: 20px auto;
+    display: flex;
+    background-color: #fff; /* White background for the content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 5px;
+    overflow: hidden; /*  Important for consistent rendering */
+}
+
+/* Left Column Styles */
+.left-column {
+    width: 30%;
+    background-color: #e9ecef; /* Light gray for left column */
+    padding: 20px;
+    color: #343a40; /* Darker text for better contrast */
+}
+
+.left-column h2 {
+    color: #343a40;
+    border-bottom: 2px solid #adb5bd;  /* Underline color */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.left-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-column ul li {
+    margin-bottom: 8px;
+}
+
+.profile-image {
+    width: 100%; /* Make the image responsive within its container */
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 50%; /* Make it circular */
+    display: block;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.contact-info i {
+    margin-right: 5px;
+    color: #495057; /* Darker icon color */
+}
+
+/* Right Column Styles */
+.right-column {
+    width: 70%;
+    padding: 20px;
+}
+
+header {
+    text-align: left; /* Align header content to the left */
+    border-bottom: 3px solid #007bff; /*  Primary color underline */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #212529;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+#letter p {
+    margin-bottom: 10px;
+    text-align: justify; /* Justify the text */
+}
+
+.signature {
+    text-align: right;
+    font-style: italic;
+}
+
+/* Links */
+a {
+    color: #007bff; /* Primary color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .profile-image {
+        width: 50%;  /* Adjust as necessary */
+        margin: 0 auto 20px; /* Center the image */
+    }
+
+    .profile-image img {
+        margin: 0 auto;
+    }
+}
